@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        body{
+            box-sizing:border-box;
+            height:100%;
+            width:100%;
+
+        }
+        .container{
+            display:grid;
+            background-color: rgb(192, 216, 34);
+       
+            padding:4rem;
+          
+            gap:1rem;
+            border:1rem solid black;
+            color:white;
+             grid-template-rows:repeat(6, 1fr);
+             grid-template-columns: repeat(1, 1fr);
+
+           
+        }
+        .item{
+            background-color:aqua;
+             border:0.3rem solid black;
+             display:flex;
+             justify-content:center;
+             align-items:center;
+             font-size:1.5rem;
+
+
+
+
+        }
+        @media(min-width:768px){
+            .container{
+                 grid-template-rows:repeat(2 ,1fr);
+                 grid-template-columns: repeat(3 ,1fr);
+
+            }
+        .header{
+             grid-column-start:1;
+            grid-column-end:4;
+            height:4rem;
+         
+
+        }
+        .footer{
+            grid-column-start:1;
+            grid-column-end:4;
+            height:4rem;
+       
+        }
+        .sidebar{
+            grid-row-start:2;
+            grid-row-end :4;
+      
+        }
+        .con{
+            grid-column-start:2;
+            grid-column-end:4;
+            height:4rem;
+         }
+         .con2 {
+            height:4rem;
+
+         }
+         .con3{
+            height:4rem;
+
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">item1</div>
+        <div class="item sidebar">item2</div>
+        <div class="item con">content1</div>
+        <div class="item con2 ">content2</div>
+        <div class="item con3">content3</div>
+        <div class="item footer">item6</div>
+    </div>
+    
+</body>
+</html>
