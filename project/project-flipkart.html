@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+
+        }
+       
+        .image {
+            height: 50px;
+            width: 250px;
+
+
+        }
+
+        .searchbar {
+            width: 450px;
+            height: 50px;
+            background-color:rgb(251, 245, 245);
+            border-radius:6px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            height: 90px;
+            padding:0;
+            padding-top:20px;
+          
+
+        }
+        
+        nav ol {
+            display: flex;
+            gap: 50px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        main ol {
+            display: flex;
+            gap: 50px;
+        }
+
+        .shopimages {
+            height: 70px;
+            width: 100px;
+        }
+
+        div {
+            width: 100%;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 300px 400px;
+            gap: 10px;
+            position: relative;
+        }
+
+       
+        #boxes {
+            background-color: lightpink;
+            gap: 10px;
+
+
+        }
+
+        section {
+            background-color: rgb(110, 111, 112);
+            width:100%;
+           margin-top:10px;
+            margin-bottom:10px;
+            height:210px;
+        }
+        section img{
+            width:98%;
+            height:200px;
+            align-items: center;
+            margin-bottom:10px;
+        }
+        article {
+            display: flex;
+            gap: 10px;
+            margin-top:30px;
+            margin-bottom:10px;
+            
+            width:100%;
+          
+           
+        }
+
+         article .left {
+
+            background-color: rgb(206, 247, 247);
+            width:80%;
+            
+        }
+
+        article .right {
+            background-color:rgb(228, 229, 231);
+            float:right;
+            width:20%;
+          
+            
+
+        }
+       
+        
+
+        header {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top:10px;
+            text-align:center;
+            margin-bottom:10px;
+        }
+
+        header div {
+            width: 400px;
+            height:420px;
+            background-color: #fbf9f9;
+            text-align:center;
+            overflow:hidden;
+            display:block;
+            border:1px solid rgba(163, 163, 163, 0.862);
+            border-radius:7px;
+        }
+
+        footer {
+            
+            width: 100%;
+            background-color: black;
+            margin-top: 10px;
+        }
+        .deals{
+            height:100px;
+            display:flex;
+            width:100px;
+            justify-content:space-around;
+            margin-top: 10px;
+            border:1px solid lightgrey;
+
+        }
+        footer div{
+            display:flex;
+            justify-content:space-around;
+            color:white;
+            padding:10px;
+            cursor:pointer;
+
+            
+            
+        }
+        header div img{
+            height:300px;
+            width:300px;
+            align-items:center;
+        }
+        #heading{
+            height:50px;
+            width:500px;
+        }
+       
+        
+        header div .textcolor{
+            color:green;
+            font-size:25px;
+        }
+        article .right img{
+            height:350px;
+            width:100%;
+        }
+         button{
+            height:50px;
+            width:100px;
+            border-radius:5px;
+            cursor:pointer;
+
+
+        }
+        button :hover{
+            background-color:blue;
+            color:white;
+            
+
+        }
+        .topbar:hover{
+            text-decoration:underline;
+        }
+         button .cart{
+           
+            margin:50px;
+           
+            background-color:rgba(205, 205, 8, 0.729);
+            color:black;
+            height:50px;
+            width: 50px;
+            border-radius: 5px;
+            cursor:pointer;
+            font-size:30px;
+            padding-bottom:8px;
+         
+
+
+        }
+        button .cart:hover{
+            background-color:yellow;
+            color:white;
+        }
+        button:active{
+            opacity:0.7;
+            box-shadow:rgb(239, 219, 73);
+        }
+        @media(max-width:1024px){
+            nav{
+                width:100px;
+               
+            }
+           
+
+        }
+        
+    </style>
+</head>
+
+<body>
+   
+    <nav>
+        <hr>
+        <img class="image" src="flipkartlogo.svg" alt="">
+        <ol>
+
+            <li><h2><input class="searchbar" type="text" placeholder="Search for Products ,Brands and More"></h2></li>
+            <button class="topbar"><h3><b>Login ▾</b></h3></button>
+             <li><button class="cart"><h3>Cart  ▾</h3></button></li>
+            <li class="topbar"><h3><b>Become a Seller</b></h3></li>
+            <li class="topbar"><h3> <b>More options</b></h3></li>
+            <button class="topbar"><h3><b>Your Orders ▾</b></h3></button>
+            
+        </ol>
+    </nav>
+    <hr>
+   
+    
+    <main>
+        <ol>
+            <li><img class="shopimages" src="delivery.jpg">
+                <p><b>Minutes in min</b></p>
+            </li>
+            <li><img class="shopimages" src="mobiles.jpg">
+                <p><b>Mobiles n Tablets</b></p>
+            </li>
+            <li><img class="shopimages" src="fashion.jpg">
+                <p><b>Fashion</b></p>
+            </li>
+            <li><img class="shopimages" src="electronics.jpg">
+                <p><b>Electronics</b></p>
+            </li>
+            <li><img class="shopimages" src="tv.jpg">
+                <p><b>TV n Appliances</b></p>
+            </li>
+            <li><img  class="shopimages" src="grocery.webp">
+                <p><b> Store</b></p></li>
+            <li><img src="bookings.webp">
+            <p><b>Flight Bookings</b> </p>
+            </li>
+            <li><img class="shopimages" src="winterwear.webp">
+            <p><b>Winter Wear</b></p>
+            </li>
+           
+
+        </ol>
+    </main>
+    <hr>
+    
+    <div>
+        <section>
+            <img src="advertise.webp">
+          
+        </section>
+
+        <hr>
+
+        <article>
+            <div class="left">
+                <div><h2>TOP DEALS</h2></div>
+                <div class="deals">
+                    <img src="projector.webp">
+                    <p>Projector</p>
+                    <p><b>From &#8377 6990</b></p>
+                    
+                    <img src="speaker.webp">
+                    <p>Best Selling Mobile Speaker</p>
+                    <p><b>From &#8377 499</b></p>
+
+                    <img src="monitors.webp">
+                    <p>Moniters </p>
+                    <p><b>From &#8377 6599</b></p>
+
+                    <img src="watch.webp">
+                    <p>FastTrack Smartwatches</p>
+                    <p>From &#8377 1399</p>
+
+                    <img src="printer.webp">
+                    <p>Printers</p>
+                    <p><b>From &#8377 2336</b></p>
+
+                    <img src="earbuds.webp">
+                    <p>Best wireless Earphones</p>
+                    <p><b>Shop Now!</b></p>
+
+                </div>
+            </div>
+            <div class="right">
+                <img src="shopnow.webp">
+            </div>
+              
+        </article>
+        
+
+
+    </div>
+    <hr>
+
+     <header>
+        <div>
+            <img src="1.webp">
+            <p class="textcolor"><b>Mens Sport Shoes</b></p>
+        </div>
+        <div>
+            <img src="2.webp">
+            <p>Mens Casual Shoes</p>
+            <p class="textcolor"><b>Min 70% off</b></p>
+
+        </div>
+        <div>
+            <img src="3.webp">
+            <p>Pocket Fit Wallets</p>
+            <p class="textcolor"><b>Best Sale Price</b></p>
+        </div>
+        <div>
+            <img src="4.webp">
+            <p>Laptop Bags </p>
+            <p class="textcolor"><b>Min 70% off</b></p>
+        </div>
+        <div>
+            <img src="5.webp">
+            <p>Suitcases n Trolly Bags</p>
+            <p class="textcolor"><b>Best selling Price</b></p>
+        </div>
+        <div>
+            <img src="6.webp">
+            <p>Riding Gloves</p>
+            <p class="textcolor"><b>Min 50% off</b></p>
+        </div>
+        <div>
+            <img src="10.webp">
+            <p>Latest Fashion</p>
+            <p class="textcolor"><b>Top Deals</b></p>
+        </div>
+        <div>
+            <img src="8.webp">
+            <p>Asthetic wall Clock</p>
+            <p class="textcolor"><b>Min 20% off</b></p>
+        </div>
+        <div>
+            <img src="9.webp">
+            <p>Home Essentials</p>
+            <p class="textcolor"><b>BestPrices and Offer</b></p>
+        </div>
+
+    </header>
+    <hr>
+
+    <footer>
+     <div>
+        <div><b>ABOUT</b> </div>
+        <div>GROUP COMPANIES</div>
+        <div>HELP</div>
+        <div>CONSUMER POLICY</div>
+        
+        </div>
+        <div>
+            <div><b>Contact Us</b></div>
+            <div>Myntra</div>
+            <div>Payments </div>
+            <div>Cancellation n Returns</div>
+           
+        </div>
+        <div>
+            <div><b>About us</b> </div>
+            <div>CleanTrip</div>
+            <div>Shipping </div>
+            <div>terms of use</div>
+           
+        </div>
+        <div>
+        <div><b>Careers</b></div>
+        <div>Shopsy</div>
+        <div>Cancellation </div>
+        <div>security</div>
+        </div>
+        <hr>
+        <div>
+          <div>Become a seller</div>  
+          <div>Advertise</div>
+          <div>Gift Cards</div>
+          <div>HELP CENTER</div>
+          <div>2007-2025 Flipkart.com</div>
+
+        </div>
+    
+    </footer>
+  
+</body>
+
+</html>
