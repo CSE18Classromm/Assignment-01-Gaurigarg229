@@ -1,0 +1,113 @@
+
+
+
+.hamburger-menu{
+    height:40px;
+     padding-top:20px;
+}
+
+.yt-logo{
+    width:200px;
+    height:50px;
+    margin-left:10px;
+    padding-top:20px;
+}
+.seachbar{
+    height:50px;
+    width:500px;
+    border-radius:36px;
+    padding-top:12px;
+   
+}
+.mic{
+    border-radius:5px;
+    height:80px;
+    width:50px;
+     padding-top:10px;
+}
+.bell{
+    border-radius:5px;
+    height:80px;
+    width:50px;
+     padding-top:10px;
+}
+.dph{
+    height:80px;
+    width:50px;
+    padding-top:10px;
+}
+nav{
+    display:flex;
+    padding-top:20px;
+  
+}
+nav button{
+    background-color:lightgrey;
+    display:flex;
+    border-radius:12px;
+    height:30px;
+    justify-content:space-between;
+    padding:5px;
+    margin-left:40px;
+}
+nav button:hover{
+    cursor:pointer;
+    box-shadow: lightslategray;
+}
+
+.icon{
+    height:60px;
+    width:60px;
+    border-radius:6px;
+    align-items:center;
+}
+.icon:hover{
+    cursor:pointer;
+}
+.boxes{
+    border:2px solid black;
+    height:280px;
+    width:380px;
+    align-items:center;
+    margin-bottom:10px;
+ 
+}
+.boxes div{
+    display:flex;
+    height:100px;
+    background-color:white;
+    
+
+}
+.boxes img{
+    width:350px;
+    align-items: center;
+    padding:15px;
+}
+.boxes div img {
+    height:50px;
+    width:50px;
+
+}
+.content{
+    display:flex;
+    flex-direction:column;
+   justify-content :flex-start;
+   line-height:0%;
+}
+footer div{
+    display:flex;
+    justify-content:space-around;
+    line-height:15px;
+}
+article div section{
+    display:flex;
+    flex-direction:column;
+}
+h4 h5{
+    opacity:0.6;
+}
+.boxes:hover{
+    cursor:pointer;
+    background-color:lightgrey;
+}

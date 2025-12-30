@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="header.css" rel="stylesheet">
+    <style>
+        body{
+            display:grid;
+            grid-template-rows:100px  60px 700px 140px;
+        }
+        header{
+            display:flex;
+            justify-content:space-around;
+            background-color:white;
+            border:1px solid black;
+            margin-bottom:1px;
+        }
+        main{
+            display:flex;
+            border:1px solid black;
+            margin-bottom:1px;
+           
+        }
+        sidebar{
+            width:5%;
+            background-color:white;
+            display:grid;
+            grid-template-rows:repeat(4, 4fr);
+            padding:50px;
+            border:2px solid;
+        }
+        article{
+           width:89%;
+            background-color:white;
+            display:grid;
+            grid-template-columns:repeat(3, 4fr);
+            grid-template-rows:repeat(2, 5fr);
+            padding:15px;
+        }
+        footer{
+            background-color:white;
+            border:1px solid black;
+            align-items:center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+  
+     <header>
+        <img class="hamburger-menu" src="hamburger-menu.png">
+        <img class="yt-logo" src="yt.png">
+        <input  class="seachbar" type="text" placeholder="Search">
+        <img class="mic" src="mic.png" >
+        <img class="bell" src="bell.png">
+        <img class="dph" src="dp.png">
+     </header>
+     
+     <nav>
+         <button><b>All</b></button>
+          <button><b>Live</b></button>
+           <button><b>Mixes</b></button>
+            <button><b>Podcasts</b></button>
+             <button><b>Songs</b></button>
+             <button><b>Thrillers</b></button>
+             <button><b>Recently Uploaded</b></button>
+             <button><b>Watched </b></button>
+             <button><b>New to you</b></button>
+             <button><b>Object oriented Programming</b></button>
+             <button><b>Haunted Movies</b></button>
+           
+
+     </nav>
+     
+     <main>
+        <sidebar>
+            <div>
+                <img class="icon" src="home.png">
+                <p><b><h3>HOME</h3></b></p>
+            </div>
+           <div>
+            <img class="icon" src="shorts.png">
+             <p><b><h3>Shorts</h3></b></p>
+           </div>
+           <div>
+            <img class="icon" src="subscib.png">
+            <p><b><h3>Subscriptions</h3></b></p>
+           </div>
+           <div>
+            <img class="icon" src="dp.png">
+            <p><b><h3>You</h3></b></p>
+           </div>
+          
+           
+        </sidebar>
+        <article>
+            <div class="boxes">
+            +    <img src="1.jpg">
+                <div>
+                    <section>
+                        <img src="dp.png">
+                        <div>Sony Sab</div>
+                    </section>
+                    
+                    <div class="content">
+                        <b><h3>Taarak Mehta Ka Ooltah Chashmah- Ep 120</h3></b>
+                        <h4>Sony Sab</h4>
+                        <h5>26M views .7 years ago</h5>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="boxes">
+                <img src="2.jpg">
+                <div>
+                    <section>
+                        <img src="dp.png">
+                        <div>Live Concerts</div>
+                    </section>
+                    
+                    <div class="content">
+                    <b><h3>New song by Arjit Singh</h3></b>
+                    <h4>2M veiws</h4>
+                     <h5>FM Radio</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                 <img src="3.jpg">
+               
+                <div>
+                    <section>
+                        <img src="dp.png">
+                        <div>Disney Cartoon</div>
+                    </section>
+               
+               <div class="content">
+                <b><h3>Cartoon Doremon Ep-215</h3></b>
+                <h4>latest episode </h4>
+                <h5>Disney Channel 85k views</h5>
+                </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <img src="4.jpg">
+                <div>
+                    <section>
+                        <img src="dp.png">
+                        <div>Figuring Out</div>
+                    </section>
+                    
+                    <div class="content">
+                       <b><h3> Podcast by Raj Shamani</h3></b>
+                        <h4>Indian Chess Master</h4>
+                        <h5>2.5M views Figuring out </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <img src="5.jpg">
+                <div>
+                    <section>
+                        <img src="dp.png">
+                        <div>Apna College</div>
+                    </section>
+                    
+                    <div class="content">
+                       <b><h3> Complete HTML tutorial</h3></b>
+                        <h4>Learn your skills here </h4>
+                        <h5>2 days ago 20k veiws</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <img src="6.jpg">
+                <div>
+                    <section>
+                        <img src="dp.png">
+                        <div>Travelling Vlogs</div>
+                    </section>
+                    
+                    <div class="content">
+                       <b><h3>Enjoy World Tour </h3></b>
+                       <h4>Travel with US</h4>
+                       <h5>5M veiws</h5>
+                    </div>
+                </div>
+            </div>
+        </article>
+     </main>
+     <footer>
+        <h2 style="align-items:center;">Footer</h2>
+        <div>
+             <div><b>Popular category</b></div>
+             <div>Worpress theme </div>
+             <div>Bootstrap Templates</div>
+        </div>
+        <div>
+            <div><b>Our Company</b></div>
+            <div>About Us </div>
+            <div>How it Works </div>
+        </div>
+        <div>
+            <div><b>Help Support</b></div>
+            <div>Forum</div>
+            <div>Terms & Conditions </div>
+        </div>
+    </footer>
+
+</body>
+</html>
