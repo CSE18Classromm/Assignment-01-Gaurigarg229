@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url("img.webp");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
+       
+        button{
+            background-color:rgb(42, 162, 198);
+            border-radius:4%;
+            cursor:pointer;
+            width:50;
+        }
+        form{
+            
+            text-align:center;
+        }
+        .space{
+            margin-right:25px;
+        }
+        h1{
+          text-align:center;
+        }
+        fieldset{
+            border:2px solid black;
+            width:auto;
+            height:auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><b><pre><u>BOOK MY TRIP</u></pre></b></h1>
+    <form autocomplete>
+
+        <fieldset >
+            <legend><b><h2> Booking Form</h2></b></legend>
+            <p>Offers a quick and easy way to book Tickets online</p>
+            <div class="transport">
+            <input type="radio" value="Flight"/>
+            <label for="">Flight </label>
+
+            <input type="radio" />
+            <label for="">Train</label>
+
+            <input type="radio"/>
+            <label for="">Bus</label>
+            </div>
+            <br>
+            <span class="space">
+            <label for="">First name:</label>
+            <input type="text" placeholder="Enter Your First name"/>
+            </span>
+            <label for="">Last name:</label>
+            <input type="text" placeholder="Last name"/>
+           
+            <br>
+            <br>
+            <label for="">Date:</label>
+            <input type="date" placeholder="Enter your DOB" value="Date"/>
+            <br>
+            <br>
+            <label for="">Email: </label>
+            <input type="email" placeholder="Enter your email ID" required />
+            <br>
+            <br>
+            <label for="">No. of People:</label>
+            <input type="number" placeholder="count"  maxlength="4" required/>
+            <br>
+            <br>
+            <span class="space">
+            <label for="">Destination city: </label>
+            <select>
+                <option >Select city</option>
+                <option >Jaipur</option>
+                <option>Chennai</option>
+                <option>Kashmir</option>
+            </select>
+        </span>
+           <label for=""> Class: </label>
+            <select>
+                <option>Select class</option>
+               <option>Upper class</option>
+               <option>Middle class</option>
+               <option>Lower class</option>
+            </select>
+           
+            <br>
+            <br>
+            <button onclick="alert('Your Form has Submitted')">Submit</button>
+            <button>Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
