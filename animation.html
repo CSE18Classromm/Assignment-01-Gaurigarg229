@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color:aqua;
+            height:200px;
+            width:200px;
+            border:1px solid black;
+            animation-name:box;
+            animation-duration:10s;
+            margin:10px;
+            
+
+        }
+        @keyframes box{
+            0%{
+                transform:translateX(100px);
+                opacity:0.3;
+                background-color:aqua;
+
+
+            }
+            25%{
+                transform:translate(0px);
+                opacity:0.5;
+                background-color:blueviolet;
+            }
+            50%{
+                transform:translateY(100px);
+                opacity:0.7;
+                background-color:blue;
+            }
+            100%{
+                transform:translateY(0px);
+                opacity:1;
+                background-color:aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This box  is under css property of animations and transformation
+    </div>
+    
+</body>
+</html>
