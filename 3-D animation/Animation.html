@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            text-align:center;
+            perspective:800px;
+            background-color:black;
+        }
+        .container{
+            position:relative;
+            height:400px;
+            transform-style:preserve-3d;
+            animation:rotate 20s infinite linear;
+            transform-origin:ceter;
+            top:150px;
+            text-align:center;
+            
+
+        }
+        .images{
+            text-align:center;
+            height:200px;
+            width:200px;
+            
+            position:absolute;
+            transform:rotateY(calc(var(--i)*72deg)) translateZ(400px);
+        }
+        @keyframes rotate{
+            0%{
+                transform:rotateY(0deg);
+            }
+            100%{
+                transform:rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="images" style="--i:1" src="cake-1.jpg">
+        <img class="images" style="--i:2" src="cake-2.jpg">
+        <img class="images" style="--i:3" src="cake-3.jpg">
+        <img class="images" style="--i:4" src="cake-4.jpg">
+        <img class="images" style="--i:5" src="cake-5.jpg">
+    </div>
+</body>
+</html>
