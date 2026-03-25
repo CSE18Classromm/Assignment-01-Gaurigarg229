@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page1{
+            height:auto;
+            width:100%;
+            background-color:rgb(215, 146, 146);
+            border:2px solid rgb(242, 179, 179);
+
+        }
+        nav{
+            display:flex;
+            justify-content:space-between;
+            height:auto;
+            width:100%;
+            background-color:transparent;
+        }
+        .content{
+            display:flex;
+            gap:2px;
+            border:1px solid black;
+
+        }
+        .page1 h1{
+            text-align:center;
+            color:white;
+            font-size:50px;
+            font-weight:bold;
+            text-decoration:underline;
+        }
+        .boxes{
+            display:flex;
+            justify-content:space-around;
+            width:100%;
+            height:auto;
+            color:rgb(234, 214, 188);
+        }
+        .box{
+            filter:brightness(0);
+            margin-top:10px;
+            height:300px;
+            width:250px;
+        }
+        .box:hover{
+            filter:brightness(1);
+            transform:translateZ(150px);
+        }
+        .box:hover + *{
+             filter:brightness(0.7);
+            transform:translateZ(100px);
+        }
+        .box:hover + *{
+             filter:brightness(0.5);
+            transform:translateZ(50px);
+        }
+        .box:has ( + * + *){
+             filter:brightness(0.5);
+            transform:translateZ(-50px);
+        }
+         .box:has ( + * ){
+             filter:brightness(0.7);
+            transform:translateZ(-100px);
+        }
+        .page2 button{
+            color:pink;
+            border-radius:5px;
+            text-align:center;
+            
+        }
+    </style> 
+</head>
+<body>
+    <div class="page1">
+        <nav>
+            <img class="logo" src="">
+            <a href="#">HOME</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Info</a>
+            <button>Sign Up</button>
+        </nav>
+       <div>
+        <h1>Escape Through Sweetness</h1>
+         <div class="content">
+            <div class="left">
+                <img src="icecream.jpg">
+            </div>
+            <div class="right">
+                <h2>More is Merrier</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia beatae esse eos fugit totam reprehenderit cum laborum ipsa ex eum, voluptatibus accusamus dolorum non, voluptas aperiam fugiat dolorem reiciendis veniam.</p>
+            </div>
+
+        </div>
+       </div>
+    </div>
+    <div class="page2">
+        <h1>Seasons Favourite Choices</h1>
+        <div class="boxes">
+            
+            <div class="box1 box">
+                <img src="1.jpg">
+            </div>
+             <div class="box2 box">
+                <img src="2.jpg">
+             </div>
+              <div class="box3 box">
+                <img src="3.jpg"></div>
+              <div class="box4 box">
+                <img src="4.jpg">
+              </div>
+              <div class="box5 box">
+                <img src="5.jpg">
+              </div>
+             
+
+        </div>
+         <button>Explore More</button>
+    </div>
+</body>
+</html>
