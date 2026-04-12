@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>variables
+    </title>
 </head>
 <body>
-    
+    <header>
+        <button onclick="console.log(`cart Quantity: ${cartQuantity}`);">Show Quantity</button>
+        <button onclick=" cartQuantity += 1; console.log(`Cart Quantity: ${cartQuantity}`);">Add to Cart</button>
+        <button onclick="cartQuantity += 2;  console.log(`cart Quantity: ${cartQuantity}`);">+2</button>
+        <button onclick="cartQuantity += 3;  console.log(`cart Quantity: ${cartQuantity}`);">+3</button>
+        <button onclick="cartQuantity = 0; console.log(`cart Quantity: ${cartQuantity}`);">Reset cart</button>
+    </header>
+     <script>
+       //
+       let cartQuantity = 0;
+       const msg ='Hello';
+       var x = 24;
+       console.log(msg);
+       console.log(x);
+
+    </script>
 </body>
 </html>
